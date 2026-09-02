@@ -479,25 +479,35 @@
     opacity:0.75;
   }
 
-  .report-back{ margin-bottom:1rem; }
+  .report-back-nav{
+    background:var(--surface);
+    border-bottom:1px solid var(--line);
+  }
+  .report-back-nav-inner{
+    max-width:78rem;
+    margin:0 auto;
+    padding:0.9rem clamp(1.25rem, 4vw, 3.5rem);
+  }
   .back-link{
     display:inline-flex;
     align-items:center;
-    gap:0.4rem;
-    padding:0.45rem 0.85rem;
-    border:1px solid var(--masthead-line);
-    border-radius:5px;
-    font-size:0.78rem;
-    font-weight:600;
+    gap:0.45rem;
+    padding:0.55rem 1rem;
+    border:1px solid var(--line-strong);
+    border-radius:6px;
+    font-size:0.84rem;
+    font-weight:700;
     letter-spacing:0.02em;
-    color:var(--masthead-ink);
+    color:var(--ink);
     text-decoration:none;
-    background:rgba(255,255,255,0.04);
-    transition:background .15s ease, border-color .15s ease;
+    background:var(--surface-alt);
+    box-shadow:var(--shadow);
+    transition:background .15s ease, border-color .15s ease, color .15s ease;
   }
   .back-link:hover{
-    background:rgba(255,255,255,0.08);
-    border-color:rgba(244,241,230,0.28);
+    background:var(--accent-tint);
+    border-color:var(--accent);
+    color:var(--accent-deep);
   }
 
   /* ---------- Landing page hero ---------- */
