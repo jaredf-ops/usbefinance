@@ -479,6 +479,27 @@
     opacity:0.75;
   }
 
+  .report-back{ margin-bottom:1rem; }
+  .back-link{
+    display:inline-flex;
+    align-items:center;
+    gap:0.4rem;
+    padding:0.45rem 0.85rem;
+    border:1px solid var(--masthead-line);
+    border-radius:5px;
+    font-size:0.78rem;
+    font-weight:600;
+    letter-spacing:0.02em;
+    color:var(--masthead-ink);
+    text-decoration:none;
+    background:rgba(255,255,255,0.04);
+    transition:background .15s ease, border-color .15s ease;
+  }
+  .back-link:hover{
+    background:rgba(255,255,255,0.08);
+    border-color:rgba(244,241,230,0.28);
+  }
+
   /* ---------- Landing page hero ---------- */
   .hero{
     background:linear-gradient(155deg, var(--masthead-bg) 0%, var(--masthead-bg-2) 100%);
