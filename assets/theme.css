@@ -25,6 +25,8 @@
     --status-continuation-tint:rgba(138,74,10,0.12);
     --status-completed:#146b32;
     --status-completed-tint:rgba(20,107,50,0.12);
+    --status-reallocation:#4f3993;
+    --status-reallocation-tint:rgba(79,57,147,0.12);
     --shadow:0 1px 2px rgba(11,11,11,0.06), 0 8px 24px -12px rgba(11,11,11,0.14);
     color-scheme:light;
   }
@@ -56,6 +58,8 @@
       --status-continuation-tint:rgba(224,147,47,0.16);
       --status-completed:#3ecb6a;
       --status-completed-tint:rgba(62,203,106,0.16);
+      --status-reallocation:#b487ea;
+      --status-reallocation-tint:rgba(180,135,234,0.16);
       --shadow:0 1px 2px rgba(0,0,0,0.35), 0 8px 24px -12px rgba(0,0,0,0.55);
       color-scheme:dark;
     }
@@ -84,6 +88,8 @@
     --status-continuation-tint:rgba(224,147,47,0.16);
     --status-completed:#3ecb6a;
     --status-completed-tint:rgba(62,203,106,0.16);
+    --status-reallocation:#b487ea;
+    --status-reallocation-tint:rgba(180,135,234,0.16);
     --shadow:0 1px 2px rgba(0,0,0,0.35), 0 8px 24px -12px rgba(0,0,0,0.55);
     color-scheme:dark;
   }
@@ -548,6 +554,48 @@
   }
   .back-link:hover{
     background:var(--accent-tint);
+    border-color:var(--accent);
+    color:var(--accent-deep);
+  }
+
+  .edition-nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:0.65rem;
+  }
+  .edition-pills{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:0.5rem;
+    font-size:0.84rem;
+  }
+  .edition-pills-label{
+    color:var(--ink-muted);
+    font-weight:600;
+    margin-right:0.15rem;
+  }
+  .edition-pill{
+    display:inline-flex;
+    align-items:center;
+    padding:0.35rem 0.75rem;
+    border-radius:999px;
+    border:1px solid var(--line-strong);
+    color:var(--ink-secondary);
+    text-decoration:none;
+    font-weight:600;
+    background:var(--surface-alt);
+    transition:background .15s ease, border-color .15s ease, color .15s ease;
+  }
+  .edition-pill:hover{
+    background:var(--accent-tint);
+    border-color:var(--accent);
+    color:var(--accent-deep);
+  }
+  .edition-pill.current{
+    background:var(--accent-tint-strong);
     border-color:var(--accent);
     color:var(--accent-deep);
   }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FY2027 Discretionary Funds Ledger — Aug 28, 2026 | USBE Finance</title>
+<title>FY2027 Discretionary Funds Ledger — Sept 21, 2026 | USBE Finance</title>
 <meta name="description" content="Pending continuation decisions, new requests, and available balances across the Board's five discretionary funding sources.">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon.ico" sizes="any">
@@ -31,7 +31,7 @@
       <p class="masthead-sub">Pending continuation decisions, new requests, and available balances across the Board's five discretionary funding sources.</p>
     </div>
     <div class="masthead-meta">
-      <strong>As of August 28, 2026</strong>
+      <strong>As of September 21, 2026</strong>
       Fiscal Year 2027 &middot; carried forward from FY2026
     </div>
   </div>
@@ -42,8 +42,8 @@
     <a class="back-link" href="/">&larr; All reports</a>
     <div class="edition-pills">
       <span class="edition-pills-label">This report:</span>
-      <span class="edition-pill current">Aug 28, 2026</span>
-      <a class="edition-pill" href="/reports/discretionary-funds/2026-09/">Sept 21, 2026</a>
+      <a class="edition-pill" href="/reports/discretionary-funds/">Aug 28, 2026</a>
+      <span class="edition-pill current">Sept 21, 2026</span>
     </div>
   </div>
 </nav>
@@ -55,7 +55,7 @@
       <div class="kpi">
         <span class="kpi-label">Pending Board Decisions</span>
         <span class="kpi-value">13</span>
-        <span class="kpi-sub">3 new requests &middot; 10 continuations</span>
+        <span class="kpi-sub">3 new requests &middot; 8 continuations &middot; 2 reallocations</span>
       </div>
       <div class="kpi">
         <span class="kpi-label">Requested, Awaiting Action</span>
@@ -84,9 +84,10 @@
       </div>
     </div>
     <div class="mix-card">
-      <div class="mix-bar" role="img" aria-label="New requests 9.7 percent, continuation requests 79.2 percent, completed 11.1 percent">
+      <div class="mix-bar" role="img" aria-label="New requests 9.7 percent, continuation requests 76.8 percent, reallocation requests 2.4 percent, completed 11.1 percent">
         <div class="mix-seg" style="width:9.7%; background:var(--status-new);" title="New Requests — $497,200"></div>
-        <div class="mix-seg" style="width:79.2%; background:var(--status-continuation);" title="Continuation Requests — $4,059,742"></div>
+        <div class="mix-seg" style="width:76.8%; background:var(--status-continuation);" title="Continuation Requests — $3,934,742"></div>
+        <div class="mix-seg" style="width:2.4%; background:var(--status-reallocation);" title="Reallocation Requests — $125,000"></div>
         <div class="mix-seg" style="width:11.1%; background:var(--status-completed);" title="Completed — $569,350"></div>
       </div>
       <div class="mix-legend">
@@ -102,8 +103,16 @@
           <span class="mix-dot" style="background:var(--status-continuation);"></span>
           <div>
             <div class="mix-item-label">Continuation Requests</div>
-            <div class="mix-item-value tabular">$4,059,742</div>
-            <div class="mix-item-desc">10 previously approved projects need a continue-or-close decision this cycle.</div>
+            <div class="mix-item-value tabular">$3,934,742</div>
+            <div class="mix-item-desc">8 previously approved projects need a continue-or-close decision this cycle.</div>
+          </div>
+        </div>
+        <div class="mix-item">
+          <span class="mix-dot" style="background:var(--status-reallocation);"></span>
+          <div>
+            <div class="mix-item-label">Reallocation Requests</div>
+            <div class="mix-item-value tabular">$125,000</div>
+            <div class="mix-item-desc">2 previously approved projects with no recent activity are being redirected to a new purpose rather than continued as-is.</div>
           </div>
         </div>
         <div class="mix-item">
@@ -190,8 +199,8 @@
       <div class="ledger-group-head">
         <span class="status-dot" style="background:var(--status-continuation);"></span>
         <span class="ledger-group-title">Continuation Requests</span>
-        <span class="ledger-group-count">10 projects &middot; continue or close</span>
-        <span class="ledger-group-total tabular">$4,059,742</span>
+        <span class="ledger-group-count">8 projects &middot; continue or close</span>
+        <span class="ledger-group-total tabular">$3,934,742</span>
       </div>
       <div class="ledger-table-wrap"><div class="ledger-scroll">
         <table>
@@ -204,6 +213,29 @@
             <th class="num">Balance</th>
           </tr></thead>
           <tbody id="tbody-continuation"></tbody>
+        </table>
+      </div></div>
+    </div>
+
+    <!-- Reallocation -->
+    <div class="ledger-group">
+      <div class="ledger-group-head">
+        <span class="status-dot" style="background:var(--status-reallocation);"></span>
+        <span class="ledger-group-title">Reallocation Requests</span>
+        <span class="ledger-group-count">2 projects &middot; redirect to new purpose</span>
+        <span class="ledger-group-total tabular">$125,000</span>
+      </div>
+      <div class="ledger-table-wrap"><div class="ledger-scroll">
+        <table>
+          <thead><tr>
+            <th style="width:2.5rem"></th>
+            <th>Project</th>
+            <th>Funding Source</th>
+            <th class="num">Requested</th>
+            <th class="num">Expended</th>
+            <th class="num">Balance</th>
+          </tr></thead>
+          <tbody id="tbody-reallocation"></tbody>
         </table>
       </div></div>
     </div>
@@ -243,7 +275,7 @@
       </div>
     </div>
     <div class="site-footer-text" style="text-align:right;">
-      Source: Board Disc Funds FY2026 (updated 8/28/2026), sheets &ldquo;FY2027 Board Discretionary&rdquo; and &ldquo;SUMMARY FY2027.&rdquo;<br>
+      Source: Board Disc Funds FY2026 (updated 9/21/2026), sheets &ldquo;FY2027 Board Discretionary&rdquo; and &ldquo;SUMMARY FY2027.&rdquo;<br>
       Prepared for Board presentation.
     </div>
   </div>
@@ -281,73 +313,76 @@
 
   const continuations = [
     {
-      project:"Over the Phone and Website Translation Services", by:"Board Member Moss", source:"FML",
-      req:50000, exp:0, bal:50000,
-      approved:"Approved Apr 7, 2022 &middot; continued Oct 5, 2023 &middot; recommended to the full Board by the Finance Committee Sept 6, 2024 &middot; continued Oct 3, 2024.",
-      note:"No movement on this in a couple of years. Staff has flagged for possible closure &mdash; recommend the Board confirm status before continuing.",
-      code:null
-    },
-    {
       project:"Statewide Essay Contest", by:"Board Member Davis", source:"State Funds",
       req:10500, exp:0, bal:10500,
-      approved:"Approved Oct 2, 2025.",
+      approved:"Finance Committee approved moving to full Board for continuation. 9-4-2026",
       note:"Commemorates the 250th anniversary of the Declaration of Independence: 250 awards of $100 plus three $2,500 scholarships.",
       code:"24PRTY"
     },
     {
       project:"Increasing Capacity for Anti-Bullying and Truancy Prevention (Temp .5 FTE)", by:"Leah Voorhies", source:"FML",
       req:56323.87, exp:7549.81, bal:48774.06,
-      approved:"Approved Apr 7, 2022.",
+      approved:"Finance Committee approved moving to full Board for continuation. 9-4-2026",
       note:"Funds a temporary 0.5 FTE anti-bullying specialist; funded through November 2026.",
       code:null
     },
     {
       project:"San Juan SD Broadband Infrastructure &mdash; 5-Year Grant", by:"Sarah Young", source:"Tax Delay",
       req:1790873.30, exp:0, bal:1790873.30,
-      approved:"Approved Apr 4, 2024 &middot; awarded in UtahGrants.",
+      approved:"Finance Committee approved moving to full Board for continuation. 9-4-2026",
       note:"$500,000 per year through June 30, 2029. This is the single largest open commitment on the ledger.",
       code:null
     },
     {
       project:"Annual Training Modules (T&amp;L)", by:"Jennifer Thronston (Meghan Everette)", source:"FML",
       req:76335, exp:0, bal:76335,
-      approved:"Approved Apr 4, 2024.",
+      approved:"Finance Committee approved moving to full Board for continuation. 9-4-2026",
       note:"Contract USBE250032CT ($600K).",
       code:"USBE250032CT"
     },
     {
       project:"School Safety Dashboard", by:"Shauntelle Cota", source:"FML",
       req:1500000, exp:0, bal:1500000,
-      approved:"Approved Dec 5, 2024.",
+      approved:"Finance Committee approved moving to full Board for continuation. 9-4-2026",
       note:"Contract USBE260014CT. No payments issued yet.",
       code:"USBE260014CT"
     },
     {
-      project:"ROI Project", by:"Board Member Moss", source:"State Funds",
-      req:75000, exp:0, bal:75000,
-      approved:"Approved Dec 5, 2024.",
-      note:"Staff flagged for possible closure &mdash; no contract activity recorded. Recommend the Board confirm status before continuing.",
-      code:null
-    },
-    {
       project:"Math Workshop and Research Proposal", by:"Board Member Earl", source:"FML",
       req:30710, exp:0, bal:30710,
-      approved:"Approved Nov 6, 2025.",
+      approved:"Finance Committee approved moving to full Board for continuation. 9-4-2026",
       note:"No additional staff notes on file this cycle.",
       code:"PO3 26*101"
     },
     {
       project:"Playground Study", by:"Board Member Hall", source:"FML",
       req:120000, exp:0, bal:120000,
-      approved:"No formal Board vote on file yet.",
+      approved:"Finance Committee approved moving to full Board for continuation. 9-4-2026",
       note:"Grant supports a study with Davis School District.",
       code:null
     },
     {
       project:"UPPAC Investigator Contract", by:"Board Member Kerry", source:"State Funds",
       req:350000, exp:0, bal:350000,
-      approved:"Approved Oct 2, 2025.",
+      approved:"Finance Committee approved moving to full Board for continuation. 9-4-2026",
       note:"No additional staff notes on file this cycle.",
+      code:null
+    }
+  ];
+
+  const reallocations = [
+    {
+      project:"Over the Phone and Website Translation Services", by:"Board Member Moss", source:"FML",
+      req:50000, exp:0, bal:50000,
+      approved:"Finance Committee approved moving to full Board for reallocation. 9-4-2026",
+      note:"No movement on this in a couple of years. Staff has flagged for possible closure &mdash; recommend the Board confirm status before continuing.",
+      code:null
+    },
+    {
+      project:"ROI Project", by:"Board Member Moss", source:"State Funds",
+      req:75000, exp:0, bal:75000,
+      approved:"Finance Committee approved moving to full Board for reallocation. 9-4-2026",
+      note:"Staff flagged for possible closure &mdash; no contract activity recorded. Recommend the Board confirm status before continuing.",
       code:null
     }
   ];
@@ -415,6 +450,7 @@
 
   buildRows(newRequests, "tbody-new", ["bal"]);
   buildRows(continuations, "tbody-continuation", ["exp","bal"]);
+  buildRows(reallocations, "tbody-reallocation", ["exp","bal"]);
   buildRows(completed, "tbody-completed", ["exp"]);
 
   initExpandableRows();
